@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Product Management</title>
+
+    <!-- Style sheets -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body ng-app="productManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Product Management</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ng-include="'app/products/productListView.html'"></div>
+    </div>
+
+    <!-- External/lib Scripts -->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-mocks/angular-mocks.js"></script>
+    
+    <!-- Application/Custom Scripts -->
+    <script src="app/app.js"></script>
+
+    <!-- Classes -->
+    <script src="app/products/product.js"></script>
+
+    <!-- Services -->
+    <script src="app/common/services/common.services.js"></script>
+    <script src="app/common/services/dataAccessService.js"></script>
+    <script src="app/common/services/productResourceMock.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/products/productListCtrl.js"></script>
+</body>
+
+</html>
